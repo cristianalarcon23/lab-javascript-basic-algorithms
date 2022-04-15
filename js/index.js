@@ -11,8 +11,8 @@ function greetUser2 () {
     console.log(`The navigator's name is ${hacker2}`);
 }
 
-greetUser1();
-greetUser2();
+console.log(greetUser1(hacker1));
+console.log(greetUser2(hacker2));
 
 function userLength () {
     if (hacker1.length < hacker2.length) {
@@ -31,6 +31,32 @@ function userLength () {
 
 userLength();
 
+function upperName (hacker1) {
+    return hacker1.toUpperCase();
+    console.log(hacker1.toUpperCase());
+}
+
+upperName();
+
+function upperNameSplit () {
+  const upperSplit = upperName();
+  return upperSplit.split(" ");
+}
+
+upperNameSplit();
+
+function compareNames (hacker1,hacker2) {
+  if (hacker1.localeCompare(hacker2)) < 0) {
+    return true;
+    console.log(`The driver's name goes first.`);
+  }
+  else (hacker1.localeCompare(hacker2)) > 0) {
+    return false;
+    (`Yo, the navigator goes first definitely.`);
+  }
+  else {
+    return (`What?! You both have the same name?`);
+  }
 
 
 
