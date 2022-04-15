@@ -45,18 +45,20 @@ function upperNameSplit () {
 
 upperNameSplit();
 
-function compareNames (hacker1,hacker2) {
-  if (hacker1.localeCompare(hacker2)) < 0) {
-    return true;
-    console.log(`The driver's name goes first.`);
-  }
-  else (hacker1.localeCompare(hacker2)) > 0) {
-    return false;
-    (`Yo, the navigator goes first definitely.`);
-  }
-  else {
-    return (`What?! You both have the same name?`);
-  }
+function compareNames (hacker1, hacker2) {
+    if (hacker1.localeCompare(hacker2) < 0) {
+        return ("Driver's name go first")
+    } 
+    else {
+        return ("Navigator's name goes first")
+    }
+}
+console.log(compareNames(hacker1, hacker2));
 
+function compareNamesEquals (hacker1, hacker2) {
+    if (hacker1.localeCompare(hacker2) = 0) {
+        return ("You both have same names!")
+    }
+}
 
-
+compareNamesEquals();
